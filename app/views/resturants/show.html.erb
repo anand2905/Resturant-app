@@ -1,0 +1,26 @@
+<div class="row">
+	<div class="col-md-8">
+		<div class="resturant-info">
+			<h2>Name: <%= @resturant.name %></h2>
+	      <h4>Location: <%= @resturant.location %></h4>
+	  </div>
+  </div>
+</div>
+
+		<div>
+			<%= link_to "Check Food Items", food_item_path(resturant_id: @resturant), class: "btn btn-custom" %>
+		</div>
+		</div>	
+
+<%= link_to "Back", root_path, class: "btn btn-custom"%>
+
+<%# if user_signed_in? %>
+
+<%# if @resturant.user_id == current_user.id %>
+
+<%#= link_to "Edit", edit_resturant_path(@resturant), class: "btn btn-custom" %>
+<%#= link_to "Delete", resturant_path(@resturant), method: :delete, data: {confirm: "Are you sure"}, class: "btn btn-custom"%>
+
+<%# end %>
+<%# end %>
+</div>

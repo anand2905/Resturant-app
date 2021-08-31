@@ -1,0 +1,14 @@
+<div>
+<h3>Food Items</h3>
+  <ul>
+  <% @food_items.each do |food| %>
+      <li>
+        <h6>Title:<%= food.title -%></h6>
+        <h6>Price:<%= food.price -%></h6>
+        <h6>Description: <%= food.destription -%></h6>
+        <h6>Quantity:  <%= text_field_tag "quantity" %></h6>
+        <%= check_box_tag 'resturant_food_ids[]', food.id %>
+      </li>
+  <% end %>
+</ul>
+</div>
